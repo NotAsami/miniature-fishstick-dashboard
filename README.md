@@ -43,7 +43,3 @@ npm run preview
 ## Notes
 
 This project is intended as a simple template. You can extend it with more components and integrate additional APIs over time as your dashboard grows.
-
----
-
-If you'd like, I can also generate a more detailed README, add badges, or customize it to your exact project structure.
