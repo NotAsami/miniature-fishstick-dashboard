@@ -1,0 +1,28 @@
+@tailwind/preflight;
+@tailwind utilities;
+
+/* 3. CSS variables */
+:root {
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    /* ... rest of your variables ... */
+}
+
+/* Dark theme override */
+.dark {
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    /* ... rest of your dark variables ... */
+}
+
+/* Optional: base layer for Tailwind */
+@layer base {
+    * {
+        @apply border-border outline-ring/50;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
